@@ -54,9 +54,9 @@ public class Module {
         turnFeedback = new PIDController(7.0, 0.0, 0.0);
         break;
       case SIM:
-        driveFeedforward = new SimpleMotorFeedforward(0.12, 2.8, 0.17); // 0, 0.13, 0
-        driveFeedback = new PIDController(8.12, 0.0, 0.0); // 0.1, 0, 0
-        turnFeedback = new PIDController(10.0, 0.0, 0.0);
+        driveFeedforward = new SimpleMotorFeedforward(0.1, 0.13);
+        driveFeedback = new PIDController(0.05, 0.0, 0.0);
+        turnFeedback = new PIDController(7.0, 0.0, 0.0);
         break;
       default:
         driveFeedforward = new SimpleMotorFeedforward(0.0, 0.0);
